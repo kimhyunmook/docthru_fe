@@ -62,3 +62,24 @@
   background-color: var(--gray200);
   color: var(--gray500);
 }
+
+.chip.card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 20px;
+}
+.chip.card img {
+  margin-right: 4px;
+}
+
+.compolete {
+  background-color: var(--gray200);
+  color: var(--gray800);
+}
+.Finish {
+  background-color: var(--gray800);
+  color: #fff;
+}

@@ -48,7 +48,7 @@ function Small({ children, className, width }) {
     width,
   };
   return (
-    <OutlineBtn {...att} size="r">
+    <OutlineBtn {...att} size="s">
       {children}
     </OutlineBtn>
   );

@@ -56,7 +56,19 @@ function Small({ children, className, width, icon = false }) {
     icon,
   };
   return (
-    <FilledBtn {...att} size="r">
+    <FilledBtn {...att} size="s">
+      {children}
+    </FilledBtn>
+  );
+}
+function Yellow({ children, className, width, icon = false }) {
+  const att = {
+    className,
+    width,
+    icon,
+  };
+  return (
+    <FilledBtn {...att} className={`${className} ${styles.yellow}`} size="r">
       {children}
     </FilledBtn>
   );
@@ -66,5 +78,6 @@ FilledBtn.Large = Large;
 FilledBtn.Medium = Medium;
 FilledBtn.Regular = Regular;
 FilledBtn.Small = Small;
+FilledBtn.Yellow = Yellow;
 
 export default FilledBtn;

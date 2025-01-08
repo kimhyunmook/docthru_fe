@@ -48,3 +48,10 @@
   background-color: var(--brand_black);
   color: #fff;
 }
+
+.btn.yellow {
+  border: 2px solid var(--brand_black);
+  background-color: var(--brand_yellow);
+  color: var(--brand_black);
+  font-weight: 700;
+}

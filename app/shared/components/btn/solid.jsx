@@ -36,7 +36,7 @@ function Regular({ children, className, width }) {
 function Small({ children, className, width }) {
   const att = { className, width };
   return (
-    <SolidBtn {...att} size="r">
+    <SolidBtn {...att} size="s">
       {children}
     </SolidBtn>
   );

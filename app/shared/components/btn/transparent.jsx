@@ -11,7 +11,13 @@ function TransparentBtn({ size, className, children, width, icon = true }) {
     >
       {children}
       {icon ? (
-        <Image src="/img/icon/open.svg" alt="열기" width={24} height={24} />
+        <Image
+          src="/img/icon/open.svg"
+          alt="열기"
+          width={16}
+          height={16}
+          style={{ marginLeft: "6px" }}
+        />
       ) : null}
     </Btn>
   );
@@ -60,7 +66,7 @@ function Small({ children, className, icon, width }) {
     width,
   };
   return (
-    <TransparentBtn {...att} size="r">
+    <TransparentBtn {...att} size="s">
       {children}
     </TransparentBtn>
   );

@@ -1,6 +1,7 @@
 "use client";
 import styles from "@/app/shared/styles/chip.module.css";
 import { firstUpperCase, isEnglishOnly } from "@/lib/utils/convenience";
+import Card from "./card";
 
 function Chip({ bg, color, children, className }) {
   const english = isEnglishOnly(children);
@@ -14,7 +15,7 @@ function Chip({ bg, color, children, className }) {
         color,
       }}
     >
-      {firstUpperCase(children)}
+      {children}
     </p>
   );
 }
@@ -63,6 +64,7 @@ function Accecpt({}) {
 function Delete({}) {
   return <Chip className={`${styles.delete} ${chipStatus}`}>챌린지 삭제</Chip>;
 }
+
 Chip.NextChip = NextChip;
 Chip.ApiChip = ApiChip;
 Chip.CareerChip = CareerChip;
@@ -73,5 +75,7 @@ Chip.Pending = Pending;
 Chip.Reject = Reject;
 Chip.Accecpt = Accecpt;
 Chip.Delete = Delete;
+
+Chip.Card = Card;
 
 export default Chip;
