@@ -56,7 +56,7 @@ export default function Home() {
       <Tab.Top active={true}></Tab.Top>
       <Tab.Top size="s"></Tab.Top>
       <br />
-      <List number={0} user={{ name: "누구", id: "12", grade: "일반" }} />
+      <List number={0} user={{ name: "누구", id: "12", grade: "일반",heart:2922 }} />
       <Container></Container>
       <br />
       <SearchInput />
