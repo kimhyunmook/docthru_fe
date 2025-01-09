@@ -6,13 +6,16 @@ import { isValidEmail } from "@/lib/utils/convenience";
 import Chip from "./shared/components/chip/chip";
 import Btn from "./shared/components/btn/btn";
 import Tab from "./shared/components/tab/tab";
-import List from "./shared/components/list/list";
+import List from "./shared/components/list";
 import Container from "./shared/components/container/container";
+import SearchInput from "@/app/shared/components/search";
+import Dropdown from "./shared/components/dropdown/dropdown";
+import Card from "./shared/components/card/card";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   return (
-    <div className={styles.page}>
+    <div style={{ marginBottom: "400px" }} className={styles.page}>
       <Input
         label="이메일"
         name="email"
@@ -55,6 +58,19 @@ export default function Home() {
       <br />
       <List number={0} user={{ name: "누구", id: "12", grade: "일반" }} />
       <Container></Container>
+      <br />
+      <SearchInput />
+      <br />
+      <Dropdown></Dropdown>
+      <Dropdown.Sort></Dropdown.Sort>
+      <Dropdown.Login />
+      <Card
+        state={<Chip.Card.Compolete />}
+        chip={<Chip.NextChip />}
+        categori={<Chip.Categori>블로그</Chip.Categori>}
+      >
+        Next.js -APP Router:Routing
+      </Card>
     </div>
   );
 }

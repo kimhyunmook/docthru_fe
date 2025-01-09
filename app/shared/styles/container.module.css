@@ -13,12 +13,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--gray600);
+  font-size: 13px;
 }
 .top {
   width: 100%;
-  font-size: 14px;
   font-weight: 400;
-  color: var(--gray600);
   margin-bottom: 16px;
 }
 .date {

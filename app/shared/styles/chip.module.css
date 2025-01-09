@@ -8,7 +8,7 @@
   color: var(--gray600);
   font-family: Quantico;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .next {
@@ -40,7 +40,7 @@
 }
 
 .status {
-  font-size: 16px;
+  font-size: 14 px;
   font-weight: 600;
 }
 .pending {
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 20px;
 }
 .chip.card img {
