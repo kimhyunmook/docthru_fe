@@ -65,3 +65,11 @@ ul li,
 ol li {
   list-style: none;
 }
+
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  resize: none;
+}

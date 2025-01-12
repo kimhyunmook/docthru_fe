@@ -11,6 +11,7 @@ import Container from "./shared/components/container/container";
 import SearchInput from "@/app/shared/components/search";
 import Dropdown from "./shared/components/dropdown/dropdown";
 import Card from "./shared/components/card/card";
+import Reply from "./shared/components/reply/reply";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -56,7 +57,10 @@ export default function Home() {
       <Tab.Top active={true}></Tab.Top>
       <Tab.Top size="s"></Tab.Top>
       <br />
-      <List number={0} user={{ name: "누구", id: "12", grade: "일반",heart:2922 }} />
+      <List
+        number={0}
+        user={{ name: "누구", id: "12", grade: "일반", heart: 2922 }}
+      />
       <Container></Container>
       <br />
       <SearchInput />
@@ -71,6 +75,8 @@ export default function Home() {
       >
         Next.js -APP Router:Routing
       </Card>
+      <Reply></Reply>
+      <Reply.Textarea></Reply.Textarea>
     </div>
   );
 }
