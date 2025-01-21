@@ -12,6 +12,7 @@ import SearchInput from "@/app/shared/components/search";
 import Dropdown from "./shared/components/dropdown/dropdown";
 import Card from "./shared/components/card/card";
 import Reply from "./shared/components/reply/reply";
+import Modal from "./shared/components/modal/modal";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -77,6 +78,9 @@ export default function Home() {
       </Card>
       <Reply></Reply>
       <Reply.Textarea></Reply.Textarea>
+      <br />
+      <Modal.Popup>가입이 완료되었습니다!</Modal.Popup>
+      <Modal.TextBox.Reject></Modal.TextBox.Reject>
     </div>
   );
 }
