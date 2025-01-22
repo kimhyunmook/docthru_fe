@@ -5,12 +5,8 @@
   justify-content: center;
   color: var(--gray500);
 }
-.tab.l {
+.tab {
   font-size: 18px;
-}
-
-.tab.s {
-  font-size: 16px;
 }
 
 .tab.active {
@@ -21,12 +17,8 @@
   font-weight: 600;
 }
 
-.tab.middle.l {
+.tab.middle {
   padding: 16px 24px;
-}
-
-.tab.middle.s {
-  padding: 10px 14px;
 }
 
 .tab.active.middle {
@@ -40,6 +32,15 @@
 .tab.top.l {
   padding: 21px 17px;
 }
-.tab.top.s {
-  padding: 2px 8px;
+
+@media screen and (max-width: 764px) {
+  .tab {
+    font-size: 16px;
+  }
+  .tab.middle {
+    padding: 10px 14px;
+  }
+  .tab.top {
+    padding: 2px 8px;
+  }
 }
