@@ -1,6 +1,16 @@
 import styles from "@/app/shared/styles/card.module.css";
 import Info from "../container/info";
 import Image from "next/image";
+import { PropsWithClassName } from "../../types/common";
+
+type CardProps = PropsWithClassName & {
+  chip?: React.ReactNode;
+  categori?: React.ReactNode;
+  state?: React.ReactNode;
+  date: string;
+  current: number;
+  max: number;
+};
 
 function Card({
   chip = null,
@@ -11,7 +21,7 @@ function Card({
   current = 0,
   max = 0,
   children,
-}) {
+}: CardProps) {
   return (
     <div className={`${styles.card} ${className}`}>
       <div className={styles.top}>

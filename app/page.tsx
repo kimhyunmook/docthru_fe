@@ -12,7 +12,7 @@ import SearchInput from "@/app/shared/components/search";
 import Dropdown from "./shared/components/dropdown/dropdown";
 import Card from "./shared/components/card/card";
 import Reply from "./shared/components/reply/reply";
-import Modal from "./shared/components/modal/modal.jtx";
+import Modal from "./shared/components/modal/modal";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -24,7 +24,7 @@ export default function Home() {
         type="email"
         value={email}
         onChange={(e) => {
-          const { name, value } = e.target;
+          const { value } = e.target;
           setEmail(value);
         }}
         error={"이메일 형식 알아"}
@@ -53,10 +53,10 @@ export default function Home() {
       <Btn.Solid.Regular>솔리드</Btn.Solid.Regular>
       <Btn.Filled.Yellow>버튼</Btn.Filled.Yellow>
       <br />
-      <Tab.Middle size={"s"}></Tab.Middle>
+      <Tab.Middle></Tab.Middle>
       <Tab.Middle active={true}></Tab.Middle>
       <Tab.Top active={true}></Tab.Top>
-      <Tab.Top size="s"></Tab.Top>
+      <Tab.Top></Tab.Top>
       <br />
       <List
         number={0}
@@ -73,12 +73,15 @@ export default function Home() {
         state={<Chip.Card.Compolete />}
         chip={<Chip.NextChip />}
         categori={<Chip.Categori>블로그</Chip.Categori>}
+        date="00000"
+        current={0}
+        max={3}
       >
         Next.js -APP Router:Routing
       </Card>
       <Reply></Reply>
       <Reply.Textarea></Reply.Textarea>
-      <br />
+      <br/>
       <Modal.Popup>가입이 완료되었습니다!</Modal.Popup>
       <Modal.TextBox.Reject></Modal.TextBox.Reject>
     </div>
